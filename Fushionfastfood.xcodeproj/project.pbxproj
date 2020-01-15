@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
 		3B8201A423CDAE200027A534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A323CDAE200027A534 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8201A123CDAE200027A534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
 				3B8201A523CDAE200027A534 /* Main.storyboard */,
+				1F92D02423CEE19C00144E18 /* Content.storyboard */,
 				3B8201AB23CDAE230027A534 /* Assets.xcassets */,
 				3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */,
 				3B8201B023CDAE230027A534 /* Info.plist */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */,
 				3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */,
 				3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */,
 				3B8201A723CDAE200027A534 /* Main.storyboard in Resources */,
