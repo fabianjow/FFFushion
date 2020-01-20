@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="VHE-6A-weY" detailTextLabel="f6c-Mr-xP9" style="IBUITableViewCellStyleSubtitle" id="9fU-I8-gro">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffCell" textLabel="VHE-6A-weY" detailTextLabel="f6c-Mr-xP9" style="IBUITableViewCellStyleSubtitle" id="9fU-I8-gro">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fU-I8-gro" id="sAt-ui-ol6">
@@ -125,8 +125,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="GV1-74-fkL" kind="relationship" relationship="viewControllers" id="kQV-IX-fWH"/>
-                        <segue destination="tOQ-vp-iiH" kind="relationship" relationship="viewControllers" id="SuO-Hq-Scc"/>
                         <segue destination="faj-SO-aXR" kind="relationship" relationship="viewControllers" id="aVB-bI-gjb"/>
+                        <segue destination="tOQ-vp-iiH" kind="relationship" relationship="viewControllers" id="SuO-Hq-Scc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S26-w6-MyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
