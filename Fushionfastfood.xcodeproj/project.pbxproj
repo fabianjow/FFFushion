@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0F43C623D6F7E900ACE611 /* StallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */; };
+		1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */; };
+		1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */; };
 		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StallTableViewController.swift; sourceTree = "<group>"; };
+		1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
+		1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
 		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				3B82019F23CDAE200027A534 /* AppDelegate.swift */,
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
+				1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */,
+				1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */,
+				1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */,
 				3B8201A523CDAE200027A534 /* Main.storyboard */,
 				1F92D02423CEE19C00144E18 /* Content.storyboard */,
 				3B8201AB23CDAE230027A534 /* Assets.xcassets */,
@@ -146,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8201A423CDAE200027A534 /* ViewController.swift in Sources */,
+				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
+				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
 				3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */,
+				1F0F43C623D6F7E900ACE611 /* StallTableViewController.swift in Sources */,
 				3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */,
 				3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */,
 			);
