@@ -10,6 +10,10 @@
 		1F0F43C623D6F7E900ACE611 /* StallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */; };
 		1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */; };
 		1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */; };
+		1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CB23D6F85900ACE611 /* Profile.swift */; };
+		1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CD23D6F86E00ACE611 /* Food.swift */; };
+		1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CF23D6F87800ACE611 /* Cart.swift */; };
+		1F0F43D223D6F88E00ACE611 /* Stall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43D123D6F88E00ACE611 /* Stall.swift */; };
 		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
@@ -24,6 +28,10 @@
 		1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StallTableViewController.swift; sourceTree = "<group>"; };
 		1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
 		1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
+		1F0F43CB23D6F85900ACE611 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		1F0F43CD23D6F86E00ACE611 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		1F0F43CF23D6F87800ACE611 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		1F0F43D123D6F88E00ACE611 /* Stall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stall.swift; sourceTree = "<group>"; };
 		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0F43D323D6F8A100ACE611 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F43CB23D6F85900ACE611 /* Profile.swift */,
+				1F0F43CD23D6F86E00ACE611 /* Food.swift */,
+				1F0F43CF23D6F87800ACE611 /* Cart.swift */,
+				1F0F43D123D6F88E00ACE611 /* Stall.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		1F0F43D423D6F8B400ACE611 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */,
+				1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */,
+				1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		1F0F43D523D6F8CE00ACE611 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B8201A523CDAE200027A534 /* Main.storyboard */,
+				1F92D02423CEE19C00144E18 /* Content.storyboard */,
+				3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		3B82019323CDAE200027A534 = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +108,10 @@
 				3B82019F23CDAE200027A534 /* AppDelegate.swift */,
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
-				1F0F43C523D6F7E900ACE611 /* StallTableViewController.swift */,
-				1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */,
-				1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */,
-				3B8201A523CDAE200027A534 /* Main.storyboard */,
-				1F92D02423CEE19C00144E18 /* Content.storyboard */,
+				1F0F43D423D6F8B400ACE611 /* TableViewController */,
+				1F0F43D323D6F8A100ACE611 /* Class */,
+				1F0F43D523D6F8CE00ACE611 /* Storyboard */,
 				3B8201AB23CDAE230027A534 /* Assets.xcassets */,
-				3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */,
 				3B8201B023CDAE230027A534 /* Info.plist */,
 				3B8201A823CDAE210027A534 /* Fushionfastfood.xcdatamodeld */,
 			);
@@ -155,10 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8201A423CDAE200027A534 /* ViewController.swift in Sources */,
+				1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */,
 				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
 				3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */,
+				1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */,
+				1F0F43D223D6F88E00ACE611 /* Stall.swift in Sources */,
 				1F0F43C623D6F7E900ACE611 /* StallTableViewController.swift in Sources */,
+				1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */,
 				3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */,
 				3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */,
 			);
