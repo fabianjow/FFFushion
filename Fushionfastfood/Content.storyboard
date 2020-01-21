@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="3577" y="-676"/>
         </scene>
-        <!--View Controller-->
+        <!--Pick Your Stall-->
         <scene sceneID="fvy-08-d9C">
             <objects>
                 <viewController id="ppR-5Q-JMI" sceneMemberID="viewController">
@@ -96,28 +96,41 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffCell" textLabel="VHE-6A-weY" detailTextLabel="f6c-Mr-xP9" style="IBUITableViewCellStyleSubtitle" id="9fU-I8-gro">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffCell" rowHeight="208" id="9fU-I8-gro">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="208"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fU-I8-gro" id="sAt-ui-ol6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VHE-6A-weY">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f6c-Mr-xP9">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ox3-OP-LYa">
+                                                    <rect key="frame" x="35" y="20" width="344" height="168"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-0L-bd4">
+                                                            <rect key="frame" x="52" y="0.0" width="240" height="128"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mcdonald" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hba-Gx-40T">
+                                                            <rect key="frame" x="109" y="132" width="126" height="36"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="hba-Gx-40T" firstAttribute="leading" secondItem="Ox3-OP-LYa" secondAttribute="leading" constant="109" id="4qa-2X-o3i"/>
+                                                        <constraint firstItem="hba-Gx-40T" firstAttribute="top" secondItem="qbd-0L-bd4" secondAttribute="bottom" constant="8" id="65H-X0-9Lq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hba-Gx-40T" secondAttribute="trailing" constant="109" id="eaA-XU-DOF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hba-Gx-40T" secondAttribute="bottom" id="lRg-q0-31x"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ox3-OP-LYa" secondAttribute="bottom" constant="9" id="Grn-sk-GdC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ox3-OP-LYa" secondAttribute="trailing" constant="15" id="Wpc-LS-RWN"/>
+                                                <constraint firstItem="Ox3-OP-LYa" firstAttribute="leading" secondItem="sAt-ui-ol6" secondAttribute="leadingMargin" constant="15" id="YHw-wD-bpF"/>
+                                                <constraint firstItem="Ox3-OP-LYa" firstAttribute="top" secondItem="sAt-ui-ol6" secondAttribute="topMargin" constant="9" id="enj-dc-8dl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" label="StallCell"/>
                                         <connections>
@@ -136,7 +149,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y5g-Ko-XHw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ynz-QY-pu9"/>
+                    <navigationItem key="navigationItem" title="Pick Your Stall" id="Ynz-QY-pu9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpU-jK-tCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,6 +183,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YUx-sy-C7d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                            <color key="textColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
