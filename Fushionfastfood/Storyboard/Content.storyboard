@@ -96,7 +96,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffCell" rowHeight="208" id="9fU-I8-gro">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StaffCell" rowHeight="208" id="9fU-I8-gro" userLabel="StallCell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="208"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fU-I8-gro" id="sAt-ui-ol6">
@@ -132,7 +132,7 @@
                                                 <constraint firstItem="Ox3-OP-LYa" firstAttribute="top" secondItem="sAt-ui-ol6" secondAttribute="topMargin" constant="9" id="enj-dc-8dl"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <accessibility key="accessibilityConfiguration" label="StallCell"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="StallCell" label="StallCell"/>
                                         <connections>
                                             <segue destination="fBP-MY-mLJ" kind="show" trigger="accessoryAction" id="T62-4x-GQj"/>
                                         </connections>

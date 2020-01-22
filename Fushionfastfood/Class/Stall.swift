@@ -7,3 +7,11 @@
 //
 
 import Foundation
+class Stall {
+    
+    var stallName:String
+    
+    init(stallname:String){
+        stallName = stallname
+    }
+}

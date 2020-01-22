@@ -9,9 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    
     
     @IBAction func loginBtn(_ sender: Any) {
         
@@ -23,8 +20,6 @@ class ViewController: UIViewController {
             
         }
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
