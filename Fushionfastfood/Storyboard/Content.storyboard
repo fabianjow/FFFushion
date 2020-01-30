@@ -10,6 +10,7 @@
         <!--Plan your visit-->
         <scene sceneID="9L0-4K-QYy">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z4-qM-8MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="1aL-Q5-LsS" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="StQ-kR-oBr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -40,18 +41,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Plan your visit" id="en2-OB-5aj">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="r0q-08-hcl">
-                            <connections>
-                                <segue destination="fBP-MY-mLJ" kind="show" id="pjo-jG-734"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="r0q-08-hcl"/>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z4-qM-8MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937.68115942029" y="-680.35714285714278"/>
+            <point key="canvasLocation" x="1032" y="-1396"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Stall Locations-->
         <scene sceneID="MgN-AU-3gH">
             <objects>
                 <viewController storyboardIdentifier="Mapv" modalPresentationStyle="fullScreen" id="fBP-MY-mLJ" customClass="MapViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,10 +68,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kUV-ee-tn4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ndl-Nc-bgs">
+                    <navigationItem key="navigationItem" title="Stall Locations" id="Ndl-Nc-bgs">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.fill.badge.plus" catalog="system" id="pjo-pt-CxD">
                             <connections>
-                                <action selector="foodbtn:" destination="fBP-MY-mLJ" id="ZWC-If-Re4"/>
                                 <segue destination="v8u-EU-5fa" kind="show" id="JLn-tH-mZe"/>
                             </connections>
                         </barButtonItem>
@@ -86,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPi-kI-7Fb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2762" y="-676"/>
+            <point key="canvasLocation" x="1941" y="-676"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Qk3-Ab-kOo">
@@ -131,7 +126,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7E-OG-Tow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3577" y="-676"/>
+            <point key="canvasLocation" x="2667" y="-676"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="giY-wC-ZdN">
@@ -168,7 +163,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1aL-Q5-LsS" kind="relationship" relationship="rootViewController" id="tvZ-O1-jH8"/>
+                        <segue destination="fBP-MY-mLJ" kind="relationship" relationship="rootViewController" id="5w3-HW-C30"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLp-u6-Eu4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

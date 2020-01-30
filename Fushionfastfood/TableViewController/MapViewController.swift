@@ -15,12 +15,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    @IBAction func foodbtn(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "FoodGall", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "FoodGall") as UIViewController
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
-    }
+   
     // call the locationdelegate
     let locationDelegate = LocationDelegate()
     var latestLocation: CLLocation? = nil
