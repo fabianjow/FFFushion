@@ -10,7 +10,6 @@
         <!--Plan your visit-->
         <scene sceneID="9L0-4K-QYy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z4-qM-8MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="1aL-Q5-LsS" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="StQ-kR-oBr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -44,13 +43,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="r0q-08-hcl"/>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z4-qM-8MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1032" y="-1396"/>
         </scene>
         <!--Stall Locations-->
         <scene sceneID="MgN-AU-3gH">
             <objects>
-                <viewController storyboardIdentifier="Mapv" modalPresentationStyle="fullScreen" id="fBP-MY-mLJ" customClass="MapViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fBP-MY-mLJ" customClass="MapViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20h-Hg-ulh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
