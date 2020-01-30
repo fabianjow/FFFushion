@@ -16,6 +16,7 @@
 		1F0F43D223D6F88E00ACE611 /* Stall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43D123D6F88E00ACE611 /* Stall.swift */; };
 		1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43DA23D8C40600ACE611 /* MapViewController.swift */; };
 		1F0F43DF23E2915800ACE611 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */; };
+		1F0F43E123E2972000ACE611 /* StallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E023E2972000ACE611 /* StallViewController.swift */; };
 		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 		1F0F43D123D6F88E00ACE611 /* Stall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stall.swift; sourceTree = "<group>"; };
 		1F0F43DA23D8C40600ACE611 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		1F0F43E023E2972000ACE611 /* StallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StallViewController.swift; sourceTree = "<group>"; };
 		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
 				1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */,
+				1F0F43E023E2972000ACE611 /* StallViewController.swift */,
 				1F0F43D423D6F8B400ACE611 /* TableViewController */,
 				1F0F43D323D6F8A100ACE611 /* Class */,
 				1F0F43D523D6F8CE00ACE611 /* Storyboard */,
@@ -201,6 +204,7 @@
 				1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */,
 				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
+				1F0F43E123E2972000ACE611 /* StallViewController.swift in Sources */,
 				3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */,
 				1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */,
 				1F0F43D223D6F88E00ACE611 /* Stall.swift in Sources */,

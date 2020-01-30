@@ -118,14 +118,16 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQQ-ol-Biy">
+                                                            <rect key="frame" x="262" y="53" width="67" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="View Map"/>
+                                                            <connections>
+                                                                <segue destination="fBP-MY-mLJ" kind="show" id="My6-Lc-CyR"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="hba-Gx-40T" firstAttribute="leading" secondItem="Ox3-OP-LYa" secondAttribute="leading" constant="109" id="4qa-2X-o3i"/>
-                                                        <constraint firstItem="hba-Gx-40T" firstAttribute="top" secondItem="qbd-0L-bd4" secondAttribute="bottom" constant="8" id="65H-X0-9Lq"/>
-                                                        <constraint firstAttribute="trailing" secondItem="hba-Gx-40T" secondAttribute="trailing" constant="109" id="eaA-XU-DOF"/>
-                                                        <constraint firstAttribute="bottom" secondItem="hba-Gx-40T" secondAttribute="bottom" id="lRg-q0-31x"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -136,9 +138,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="StallCell" label="StallCell"/>
-                                        <connections>
-                                            <segue destination="fBP-MY-mLJ" kind="show" trigger="accessoryAction" id="T62-4x-GQj"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
