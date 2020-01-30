@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Food{
+    
+    var namE:String
+    var amounT:int_fast32_t
+     
+    init(name:String, amount:int_fast32_t){
+         namE = name
+        amounT = amount
+     }
+}
