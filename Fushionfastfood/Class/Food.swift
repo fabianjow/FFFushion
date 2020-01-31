@@ -12,9 +12,11 @@ class Food{
     
     var namE:String
     var amounT:int_fast32_t
+    var imageName:String
      
-    init(name:String, amount:int_fast32_t){
+    init(name:String, amount:int_fast32_t, imagename:String){
          namE = name
         amounT = amount
+        imageName = imagename
      }
 }
