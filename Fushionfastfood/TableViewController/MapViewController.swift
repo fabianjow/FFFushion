@@ -29,7 +29,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }(CLLocationManager())
     
     
-    let regionRadius: CLLocationDistance = 250
+    let regionRadius: CLLocationDistance = 20000
     func centerMapOnLocation(location: CLLocation)
     {
         let coordinateRegion = MKCoordinateRegion (
@@ -60,18 +60,42 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func Gotostall()
     {
         //Geocoding & Annotations
-        let geoCoder = CLGeocoder()
-        geoCoder.geocodeAddressString(
-        "535 Clementi Road Singapore 310171",completionHandler: {p,e in
-        let initialLocation = CLLocation(latitude: p![0].location!.coordinate.latitude, longitude: p![0].location!.coordinate.longitude)
-        self.centerMapOnLocation(location: initialLocation)
+//        let geoCoder = CLGeocoder()
+//        geoCoder.geocodeAddressString(
+//        "535 Clementi Road Singapore 310171",completionHandler: {p,e in
+//        let initialLocation = CLLocation(latitude: p![0].location!.coordinate.latitude, longitude: p![0].location!.coordinate.longitude)
+//        self.centerMapOnLocation(location: initialLocation)
+//
+//        let annotation:MKPointAnnotation = MKPointAnnotation()
+//        annotation.coordinate = initialLocation.coordinate
+//        annotation.title = "Fast Food Fusion"
+//        annotation.subtitle = "School of ICT"
+//        self.mapView.addAnnotation(annotation)
+//        })
+//
+//        geoCoder.geocodeAddressString(
+//        "172 Toa Payoh  Singapore 310172",completionHandler: {p,e in
+//        let initialLocation = CLLocation(latitude: p![0].location!.coordinate.latitude, longitude: p![0].location!.coordinate.longitude)
+//
+//        let annotation:MKPointAnnotation = MKPointAnnotation()
+//        annotation.coordinate = initialLocation.coordinate
+//        annotation.title = "Fast Food Fusion 2"
+//        annotation.subtitle = "School of ICT"
+//        self.mapView.addAnnotation(annotation)
+//        })
+        let a1 = MKPointAnnotation()
+//        a1
+        a1.coordinate = CLLocationCoordinate2D(latitude: 1.343410, longitude: 103.775440)
+        a1.title = "Fushion Fast Food"
+        a1.subtitle = "Bukit Timah"
+        self.mapView.addAnnotation(a1)
         
-        let annotation:MKPointAnnotation = MKPointAnnotation()
-        annotation.coordinate = initialLocation.coordinate
-        annotation.title = "Fast Food Fusion"
-        annotation.subtitle = "School of ICT"
-        self.mapView.addAnnotation(annotation)
-        })
+        
+        let a2 = MKPointAnnotation()
+        a2.coordinate = CLLocationCoordinate2D(latitude: 1.314560, longitude: 103.765250)
+        a2.title = "Fushion Fast Food 2"
+        a2.subtitle = "Bukit Timah"
+        self.mapView.addAnnotation(a2)
         
         
     }

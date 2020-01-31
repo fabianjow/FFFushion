@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="1941" y="-676"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Food Table View Controller-->
         <scene sceneID="Qk3-Ab-kOo">
             <objects>
-                <tableViewController storyboardIdentifier="FoodGall" modalPresentationStyle="fullScreen" id="v8u-EU-5fa" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FoodGall" modalPresentationStyle="fullScreen" id="v8u-EU-5fa" customClass="FoodTableViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QXL-fr-Bkv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
