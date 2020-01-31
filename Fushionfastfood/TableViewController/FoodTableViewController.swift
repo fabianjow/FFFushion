@@ -28,9 +28,6 @@ class FoodTableViewController: UITableViewController {
         return appDelegate.foodlist.count
 
     }
-    
-
- 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           let cell = self.tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath)
               

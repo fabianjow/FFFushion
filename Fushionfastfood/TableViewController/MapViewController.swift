@@ -57,10 +57,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
+    
     func Gotostall()
     {
         let a1 = MKPointAnnotation()
-//        a1
+        //        a1
         a1.coordinate = CLLocationCoordinate2D(latitude: 1.343410, longitude: 103.775440)
         a1.title = "Fushion Fast Food"
         a1.subtitle = "Ngee Ann Poly"
@@ -144,7 +145,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         a14.title = "Fushion Fast Food "
         a14.subtitle = "ION Orchard"
         self.mapView.addAnnotation(a14)
-        
         
     }
         
