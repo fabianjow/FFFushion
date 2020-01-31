@@ -29,7 +29,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }(CLLocationManager())
     
     
-    let regionRadius: CLLocationDistance = 2500
+    let regionRadius: CLLocationDistance = 250
     func centerMapOnLocation(location: CLLocation)
     {
         let coordinateRegion = MKCoordinateRegion (
@@ -42,8 +42,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Gotostall()
 //        functions
-    
         
 //        locationdelegate
         
@@ -52,28 +52,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             locationDelegate.locationCallback = { location in
                 self.latestLocation = location
                 self.centerMapOnLocation(location: location)
-                    
                 //self.mapView.showsUserLocation = true
-            
-        }
-        func Gotostall()
-        {
-            //Geocoding & Annotations
-            let geoCoder = CLGeocoder()
-            geoCoder.geocodeAddressString(
-            "535 Clementi Road Singapore 599489",completionHandler: {p,e in
-            let initialLocation = CLLocation(latitude: p![0].location!.coordinate.latitude, longitude: p![0].location!.coordinate.longitude)
-            self.centerMapOnLocation(location: initialLocation)
-            
-            let annotation:MKPointAnnotation = MKPointAnnotation()
-            annotation.coordinate = initialLocation.coordinate
-            annotation.title = "Ngee Ann Polytechnic"
-            annotation.subtitle = "School of ICT"
-            self.mapView.addAnnotation(annotation)
-            })
-            
-            
+                
         }
         
     }
+    func Gotostall()
+    {
+        //Geocoding & Annotations
+        let geoCoder = CLGeocoder()
+        geoCoder.geocodeAddressString(
+        "535 Clementi Road Singapore 310171",completionHandler: {p,e in
+        let initialLocation = CLLocation(latitude: p![0].location!.coordinate.latitude, longitude: p![0].location!.coordinate.longitude)
+        self.centerMapOnLocation(location: initialLocation)
+        
+        let annotation:MKPointAnnotation = MKPointAnnotation()
+        annotation.coordinate = initialLocation.coordinate
+        annotation.title = "Fast Food Fusion"
+        annotation.subtitle = "School of ICT"
+        self.mapView.addAnnotation(annotation)
+        })
+        
+        
+    }
+        
 }
+
