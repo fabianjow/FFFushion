@@ -11,10 +11,12 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var foodlist:[Food]=[]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        foodlist = [Food(name: "Chicken", amount: 8), Food(name: "Burger", amount: 10), Food(name: "Ice Water", amount: 11)]
+        
         return true
     }
 
