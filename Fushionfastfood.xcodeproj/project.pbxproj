@@ -23,6 +23,7 @@
 		3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A823CDAE210027A534 /* Fushionfastfood.xcdatamodeld */; };
 		3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AB23CDAE230027A534 /* Assets.xcassets */; };
 		3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */; };
+		BF2C41BF23E8005A0090923C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3B8201AB23CDAE230027A534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8201AE23CDAE230027A534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8201B023CDAE230027A534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		3B82019323CDAE200027A534 = {
 			isa = PBXGroup;
 			children = (
+				BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */,
 				3B82019E23CDAE200027A534 /* Fushionfastfood */,
 				3B82019D23CDAE200027A534 /* Products */,
 			);
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2C41BF23E8005A0090923C /* EditProfileViewController.swift in Sources */,
 				1F0F43DF23E2915800ACE611 /* LocationDelegate.swift in Sources */,
 				3B8201A423CDAE200027A534 /* ViewController.swift in Sources */,
 				1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */,
