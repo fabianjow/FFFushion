@@ -45,7 +45,7 @@
 		3B8201AB23CDAE230027A534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8201AE23CDAE230027A534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8201B023CDAE230027A534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = ../EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,6 @@
 		3B82019323CDAE200027A534 = {
 			isa = PBXGroup;
 			children = (
-				BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */,
 				3B82019E23CDAE200027A534 /* Fushionfastfood */,
 				3B82019D23CDAE200027A534 /* Products */,
 			);
@@ -109,6 +108,7 @@
 		3B82019E23CDAE200027A534 /* Fushionfastfood */ = {
 			isa = PBXGroup;
 			children = (
+				BF2C41BE23E8005A0090923C /* EditProfileViewController.swift */,
 				3B82019F23CDAE200027A534 /* AppDelegate.swift */,
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
