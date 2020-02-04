@@ -14,6 +14,11 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     @IBOutlet weak var amtLB: UILabel!
     @IBOutlet weak var foodLB: UILabel!
     @IBAction func addtocartBTN(_ sender: Any) {
+//        let item = Food(name: foodLB.text!, amount: amtLB.text!, imagename: <#T##String#>)
+        let storyboard = UIStoryboard(name: "Content", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Cart") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc,animated: true, completion: nil)
     }
     
     var getname = String()
