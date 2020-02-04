@@ -115,9 +115,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="AqB-ur-3X3" kind="show" id="RPG-tx-xwK"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -131,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="2667" y="-676"/>
         </scene>
-        <!--View Controller-->
+        <!--De-->
         <scene sceneID="to6-x9-HXz">
             <objects>
-                <viewController id="AqB-ur-3X3" sceneMemberID="viewController">
+                <viewController id="AqB-ur-3X3" customClass="de" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ab-DJ-X34">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtV-ci-fF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3347.826086956522" y="-676.33928571428567"/>
+            <point key="canvasLocation" x="3516" y="-676"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="giY-wC-ZdN">
