@@ -11,7 +11,12 @@ import UIKit
 
 class DetailFoodvc: UIViewController, UITableViewDelegate{
 
-
+    @IBOutlet var foodLB: UIView!
+    @IBOutlet weak var amtLB: UILabel!
+    
+    @IBAction func addtocartBTN(_ sender: Any) {
+    }
+    
     var getname = String()
     var getamt = Int16()
     
