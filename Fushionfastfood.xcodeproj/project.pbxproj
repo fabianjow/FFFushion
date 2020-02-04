@@ -24,6 +24,7 @@
 		3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AB23CDAE230027A534 /* Assets.xcassets */; };
 		3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */; };
 		3BF7464623E92939009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464523E92939009B77BB /* GoogleService-Info.plist */; };
+		E11A21316BDDD75E6DB62927 /* Pods_Fushionfastfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		1F0F43E223E43B3F00ACE611 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		32C3F4EE203B4C7E7CB7ED66 /* Pods-Fushionfastfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.debug.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.debug.xcconfig"; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8201A123CDAE200027A534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		3B8201AE23CDAE230027A534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8201B023CDAE230027A534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF7464523E92939009B77BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.release.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.release.xcconfig"; sourceTree = "<group>"; };
+		E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fushionfastfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11A21316BDDD75E6DB62927 /* Pods_Fushionfastfood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,8 @@
 			children = (
 				3B82019E23CDAE200027A534 /* Fushionfastfood */,
 				3B82019D23CDAE200027A534 /* Products */,
+				5209DC61186A7E15EDB423A3 /* Pods */,
+				5D4161F12BAB54BFAB92C83A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,24 @@
 			path = Fushionfastfood;
 			sourceTree = "<group>";
 		};
+		5209DC61186A7E15EDB423A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F4EE203B4C7E7CB7ED66 /* Pods-Fushionfastfood.debug.xcconfig */,
+				4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D4161F12BAB54BFAB92C83A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B8201B323CDAE230027A534 /* Build configuration list for PBXNativeTarget "Fushionfastfood" */;
 			buildPhases = (
+				E13DC49FC427BA3B3DCCA429 /* [CP] Check Pods Manifest.lock */,
 				3B82019823CDAE200027A534 /* Sources */,
 				3B82019923CDAE200027A534 /* Frameworks */,
 				3B82019A23CDAE200027A534 /* Resources */,
+				EE3487AD64ABDE24180B4FC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E13DC49FC427BA3B3DCCA429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fushionfastfood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3487AD64ABDE24180B4FC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B82019823CDAE200027A534 /* Sources */ = {
@@ -350,6 +419,7 @@
 		};
 		3B8201B423CDAE230027A534 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C3F4EE203B4C7E7CB7ED66 /* Pods-Fushionfastfood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +438,7 @@
 		};
 		3B8201B523CDAE230027A534 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

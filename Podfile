@@ -7,4 +7,7 @@ target 'Fushionfastfood' do
 
   # Pods for Fushionfastfood
 
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+
 end
