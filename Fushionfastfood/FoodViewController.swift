@@ -24,7 +24,7 @@ class ContactController {
             
             for c in list {
                 let name = c.value(forKeyPath: "name") as! String
-                let amount = c.value(forKeyPath: "amount") as! int_fast32_t
+                let amount = c.value(forKeyPath: "amount") as! Int16
                 let imageName = c.value(forKeyPath: "imageName") as! String
                 //print("\(firstname!) \(lastname!), \(mobileno!)")
                 foodlist.append(Food(name: name, amount: amount, imagename: imageName))

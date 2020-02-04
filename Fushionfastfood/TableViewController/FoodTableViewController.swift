@@ -37,6 +37,19 @@ class FoodTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let detail = appDelegate.foodlist[(indexPath as NSIndexPath).row]
+        
+        let Storyboard = UIStoryboard(name: "Content", bundle: nil)
+        let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailFoodvc") as! DetailFoodvc
+        
+        DvC.getname = detail.namE
+//        DvC.getamt = detail.amounT
+        
+        self.navigationController?.pushViewController(DvC, animated: true)
+            
+            
+    }
 
     /*
     // Override to support conditional editing of the table view.

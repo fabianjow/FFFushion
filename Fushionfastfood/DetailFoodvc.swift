@@ -11,9 +11,8 @@ import UIKit
 
 class DetailFoodvc: UIViewController, UITableViewDelegate{
 
-    @IBOutlet var foodLB: UIView!
     @IBOutlet weak var amtLB: UILabel!
-    
+    @IBOutlet weak var foodLB: UILabel!
     @IBAction func addtocartBTN(_ sender: Any) {
     }
     
@@ -22,7 +21,9 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
+        foodLB.text! = getname
+//        amtLB.text! = getamt
         
     }
    
