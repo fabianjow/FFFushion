@@ -37,6 +37,26 @@ class ContactController {
         return foodlist
         
     }
+    func addFoodtoCart(newfood:Food){
+        let appDelegate = (UIApplication.shared.delegate) as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        //calling entity
+        let entity = NSEntityDescription.entity(forEntityName: "CDFood", in: context)!
+        
+        // creating an object
+        let person = NSManagedObject(entity: entity, insertInto: context)
+        person.setValue(newfood.namE, forKey: "name")
+        person.setValue(newfood.amounT, forKey: "amount")
+        person.setValue(newfood.imageName, forKey: "imageName")
+        
+        
+        do {
+            try context.save()
+            
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
     
     
 }
