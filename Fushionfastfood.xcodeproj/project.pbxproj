@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,7 @@
 		3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A823CDAE210027A534 /* Fushionfastfood.xcdatamodeld */; };
 		3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AB23CDAE230027A534 /* Assets.xcassets */; };
 		3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */; };
-		3BF7464623E92939009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464523E92939009B77BB /* GoogleService-Info.plist */; };
+		3BF7464823E96404009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464723E96404009B77BB /* GoogleService-Info.plist */; };
 		E11A21316BDDD75E6DB62927 /* Pods_Fushionfastfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		3B8201AB23CDAE230027A534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8201AE23CDAE230027A534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8201B023CDAE230027A534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BF7464523E92939009B77BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BF7464723E96404009B77BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.release.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.release.xcconfig"; sourceTree = "<group>"; };
 		E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fushionfastfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 		3B82019E23CDAE200027A534 /* Fushionfastfood */ = {
 			isa = PBXGroup;
 			children = (
-				3BF7464523E92939009B77BB /* GoogleService-Info.plist */,
+				3BF7464723E96404009B77BB /* GoogleService-Info.plist */,
 				3B82019F23CDAE200027A534 /* AppDelegate.swift */,
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
@@ -137,7 +137,6 @@
 				32C3F4EE203B4C7E7CB7ED66 /* Pods-Fushionfastfood.debug.xcconfig */,
 				4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,7 +210,7 @@
 			files = (
 				1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */,
 				3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */,
-				3BF7464623E92939009B77BB /* GoogleService-Info.plist in Resources */,
+				3BF7464823E96404009B77BB /* GoogleService-Info.plist in Resources */,
 				3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */,
 				3B8201A723CDAE200027A534 /* Main.storyboard in Resources */,
 			);

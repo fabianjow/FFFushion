@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>500574631489-ol0bvh7j4lbpn2hc0c7m9qdm48401dp3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.500574631489-ol0bvh7j4lbpn2hc0c7m9qdm48401dp3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCeiG7MT2-ZJ-n8iklJc4K4JPmq_md-cT8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>500574631489</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sg.fabian.Fushionfastfood</string>
+	<key>PROJECT_ID</key>
+	<string>fffusion-fe5a1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fffusion-fe5a1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:500574631489:ios:067ec3b578d70d21dcf8c0</string>
+	<key>DATABASE_URL</key>
+	<string>https://fffusion-fe5a1.firebaseio.com</string>
+</dict>
+</plist>
