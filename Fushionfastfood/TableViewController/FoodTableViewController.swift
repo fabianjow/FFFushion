@@ -44,7 +44,7 @@ class FoodTableViewController: UITableViewController {
         let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailFoodvc") as! DetailFoodvc
         
         DvC.getname = detail.namE
-//        DvC.getamt = detail.amounT
+        DvC.getamt = detail.amounT
         
         self.navigationController?.pushViewController(DvC, animated: true)
             
