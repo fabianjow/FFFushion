@@ -528,7 +528,7 @@
         <!--View Controller-->
         <scene sceneID="BW5-Uz-Ucj">
             <objects>
-                <viewController storyboardIdentifier="Cart" id="Uvd-JN-63N" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cart" modalPresentationStyle="fullScreen" id="Uvd-JN-63N" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zEb-2K-HjC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -591,7 +591,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Uvd-JN-63N" kind="relationship" relationship="rootViewController" id="Wya-Ay-dWM"/>
+                        <segue destination="Uvd-JN-63N" kind="relationship" relationship="rootViewController" id="kpI-U6-eKF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmY-A5-9CA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
