@@ -25,6 +25,8 @@
 		3B8201AC23CDAE230027A534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AB23CDAE230027A534 /* Assets.xcassets */; };
 		3B8201AF23CDAE230027A534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8201AD23CDAE230027A534 /* LaunchScreen.storyboard */; };
 		3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */; };
+		3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */; };
+		3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8A23EC790200EA831C /* Utilities.swift */; };
 		3BF7464823E96404009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464723E96404009B77BB /* GoogleService-Info.plist */; };
 		E11A21316BDDD75E6DB62927 /* Pods_Fushionfastfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		3B8201AE23CDAE230027A534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8201B023CDAE230027A534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignLogin.swift; sourceTree = "<group>"; };
+		3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3BAC8B8A23EC790200EA831C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3BF7464723E96404009B77BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.release.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.release.xcconfig"; sourceTree = "<group>"; };
 		E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fushionfastfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,9 +75,11 @@
 		1F0F43D323D6F8A100ACE611 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */,
 				1F0F43CB23D6F85900ACE611 /* Profile.swift */,
 				1F0F43CD23D6F86E00ACE611 /* Food.swift */,
 				1F0F43CF23D6F87800ACE611 /* Cart.swift */,
+				3BAC8B8A23EC790200EA831C /* Utilities.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -123,7 +129,7 @@
 				3B82019F23CDAE200027A534 /* AppDelegate.swift */,
 				3B8201A123CDAE200027A534 /* SceneDelegate.swift */,
 				3B8201A323CDAE200027A534 /* ViewController.swift */,
-				3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */,
+				3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */,
 				1F0F43E223E43B3F00ACE611 /* FoodController.swift */,
 				1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */,
 				1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */,
@@ -277,9 +283,11 @@
 				3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */,
 				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
+				3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */,
 				3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */,
 				1F0F43E723E9F3DB00ACE611 /* DetailFoodvc.swift in Sources */,
 				1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */,
+				3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */,
 				1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */,
 				1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */,
 				3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */,
