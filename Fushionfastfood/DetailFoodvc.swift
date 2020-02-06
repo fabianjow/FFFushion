@@ -36,7 +36,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
        
         foodLB.text! = getname
 //        amtLB.text! = getamt
-         amtLB.text! = "\(getamt)"
+         amtLB.text! = "$ " + "\(getamt)"
         foodview.image = getimg
     }
    
