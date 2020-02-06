@@ -14,10 +14,18 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var foodlist:[Food]=[]
+    var imglist:[UIImage]=[]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        foodlist = [Food(name: "Chicken", amount: 8, imagename: "Chicken"), Food(name: "Burger", amount: 10, imagename: "burger"), Food(name: "Ice Water", amount: 11, imagename: "water"), Food(name: "French Fries", amount: 5, imagename: "Fries"), Food(name: "Nugget", amount: 3, imagename: "Nugget"), Food(name: "N95 Mask", amount: 1, imagename: "Mask"), Food(name: "Ice cream", amount: 2, imagename: "icecream")]
+        foodlist = [Food(name: "Chicken", amount: 8), Food(name: "Burger", amount: 10), Food(name: "Ice Water", amount: 11), Food(name: "French Fries", amount: 5), Food(name: "Nugget", amount: 3), Food(name: "N95 Mask", amount: 1), Food(name: "Ice cream", amount: 2)]
+        imglist.append(UIImage(named: "Chicken.png")!)
+        imglist.append(UIImage(named: "Burger.png")!)
+        imglist.append(UIImage(named: "Water.png")!)
+        imglist.append(UIImage(named: "Fries.png")!)
+        imglist.append(UIImage(named: "Nugget.png")!)
+        imglist.append(UIImage(named: "Mask.png")!)
+        imglist.append(UIImage(named: "Icecream.png")!)
         FirebaseApp.configure()
         return true
     }

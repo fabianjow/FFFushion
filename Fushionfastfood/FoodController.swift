@@ -25,9 +25,9 @@ class ContactController {
             for c in list {
                 let name = c.value(forKeyPath: "name") as! String
                 let amount = c.value(forKeyPath: "amount") as! Int16
-                let imageName = c.value(forKeyPath: "imageName") as! String
+//                let imageName = c.value(forKeyPath: "imageName") as! UIImage
                 //print("\(firstname!) \(lastname!), \(mobileno!)")
-                foodlist.append(Food(name: name, amount: amount, imagename: imageName))
+                foodlist.append(Food(name: name, amount: amount))
             }
             
         } catch let error as NSError {
@@ -47,7 +47,7 @@ class ContactController {
         let person = NSManagedObject(entity: entity, insertInto: context)
         person.setValue(newfood.namE, forKey: "name")
         person.setValue(newfood.amounT, forKey: "amount")
-        person.setValue(newfood.imageName, forKey: "imageName")
+//        person.setValue(newfood.imageName, forKey: "imageName")
         
         
         do {

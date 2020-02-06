@@ -7,16 +7,16 @@
 //
 
 import Foundation
-
+import UIKit
 class Food{
     
     var namE:String
     var amounT:Int16
-    var imageName:String
+//    var imageName:UIImage
      
-    init(name:String, amount:Int16, imagename:String){
+    init(name:String, amount:Int16){
          namE = name
         amounT = amount
-        imageName = imagename
+//        imageName = imagename
      }
 }

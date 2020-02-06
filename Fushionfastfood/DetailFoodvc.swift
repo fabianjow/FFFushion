@@ -13,6 +13,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
 
     @IBOutlet weak var amtLB: UILabel!
     @IBOutlet weak var foodLB: UILabel!
+    @IBOutlet weak var foodview: UIImageView!
     @IBAction func addtocartBTN(_ sender: Any) {
         //        let item = Food(name: foodLB.text!, amount: amtLB.text!, imagename: <#T##String#>)
         //        let storyboard = UIStoryboard(name: "Content", bundle: nil)
@@ -27,6 +28,8 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     
     var getname = String()
     var getamt = Int16()
+    var getimg = UIImage()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
         foodLB.text! = getname
 //        amtLB.text! = getamt
          amtLB.text! = "\(getamt)"
+        foodview.image = getimg
     }
    
     

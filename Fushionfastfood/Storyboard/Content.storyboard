@@ -173,6 +173,7 @@
                     <connections>
                         <outlet property="amtLB" destination="GFM-CO-6IT" id="4hr-f5-Q49"/>
                         <outlet property="foodLB" destination="emP-j4-yzv" id="JEW-Lf-FaU"/>
+                        <outlet property="foodview" destination="szS-cW-YCJ" id="6tX-mc-lRL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtV-ci-fF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
