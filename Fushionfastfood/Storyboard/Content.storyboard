@@ -244,7 +244,7 @@
         <!--Profile-->
         <scene sceneID="r5i-NZ-RfF">
             <objects>
-                <viewController id="dSj-V4-L9a" sceneMemberID="viewController">
+                <viewController id="dSj-V4-L9a" customClass="ProfileViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xs2-Vs-9jb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,6 +375,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailFld" destination="rmr-bz-5z7" id="buO-MW-iQH"/>
+                        <outlet property="mobileNoFld" destination="OWX-GT-Ffd" id="GBf-ag-eHf"/>
+                        <outlet property="userNameFld" destination="a72-bO-OgH" id="gV1-9a-u6L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cig-bU-etZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
