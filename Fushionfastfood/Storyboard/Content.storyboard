@@ -50,7 +50,7 @@
         <!--Stall Locations-->
         <scene sceneID="MgN-AU-3gH">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fBP-MY-mLJ" customClass="MapViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapviewvc" modalPresentationStyle="fullScreen" id="fBP-MY-mLJ" customClass="MapViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="20h-Hg-ulh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -526,10 +526,10 @@
             </objects>
             <point key="canvasLocation" x="2760.8695652173915" y="8.7053571428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Checkoutvc-->
         <scene sceneID="E8U-5X-Ahr">
             <objects>
-                <viewController id="nDj-9T-11F" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Checkoutvc" id="nDj-9T-11F" customClass="Checkoutvc" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lRE-u2-KLn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,12 +557,17 @@
                                 </state>
                                 <connections>
                                     <action selector="addtocartBTN:" destination="AqB-ur-3X3" eventType="touchUpInside" id="laF-iJ-Bzl"/>
+                                    <action selector="checkoutBtn:" destination="nDj-9T-11F" eventType="touchUpInside" id="4a5-N9-FaT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BLT-vh-paY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2sU-FR-osT"/>
+                    <connections>
+                        <outlet property="totalLB" destination="Mgj-83-eJC" id="xMR-18-Ax3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFx-9K-yo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -630,7 +635,13 @@
                             <outlet property="delegate" destination="68U-QP-IsN" id="VrP-BC-CEX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="CART" id="raK-YU-9TZ"/>
+                    <navigationItem key="navigationItem" title="CART" id="raK-YU-9TZ">
+                        <barButtonItem key="rightBarButtonItem" title="Checkout" id="93t-MM-NLX">
+                            <connections>
+                                <segue destination="nDj-9T-11F" kind="show" id="SU1-6G-cQX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzx-yC-CqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

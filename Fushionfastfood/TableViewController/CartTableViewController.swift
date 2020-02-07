@@ -11,10 +11,10 @@ import UIKit
 class CartTableViewController: UITableViewController {
     
     var food:[Food] = []
-
+    var foodcontroller:FoodController = FoodController()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let foodcontroller:FoodController = FoodController()
+        
         food = foodcontroller.Retrievedfood()
         for i in food{
             print (i.namE)
@@ -55,8 +55,31 @@ class CartTableViewController: UITableViewController {
         return cell
     }
     
+    
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        let currentContactNum = self.food[indexPath.row].namE
+//        if editingStyle == UITableViewCell.EditingStyle.delete {
+//            food.remove(at: indexPath.row)
+//
+//            FoodController.deleteContact(mobileno: currentContactNum)
+//            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+//        }
+//
+//    }
+
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+//            let Storyboard = UIStoryboard(name: "Content", bundle: nil)
+//            let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailFoodCvc") as! Checkoutvc
+//
+//            self.navigationController?.pushViewController(DvC, animated: true)
+//
+//
+//        }
+    
 
     /*
+     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
