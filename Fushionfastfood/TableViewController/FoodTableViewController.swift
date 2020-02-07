@@ -50,6 +50,7 @@ class FoodTableViewController: UITableViewController {
 //        DvC.getimg =
 //        DvC.getimg = detail.imageName
         
+        
         self.navigationController?.pushViewController(DvC, animated: true)
             
             
