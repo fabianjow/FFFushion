@@ -46,9 +46,11 @@ class FoodTableViewController: UITableViewController {
         
         DvC.getname = detail.namE
         DvC.getamt = detail.amounT
+        
         DvC.getimg = img
 //        DvC.getimg =
 //        DvC.getimg = detail.imageName
+        
         
         self.navigationController?.pushViewController(DvC, animated: true)
             

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */; };
-		1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */; };
 		1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CB23D6F85900ACE611 /* Profile.swift */; };
 		1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CD23D6F86E00ACE611 /* Food.swift */; };
 		1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CF23D6F87800ACE611 /* Cart.swift */; };
@@ -17,6 +16,8 @@
 		1F0F43E323E43B3F00ACE611 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E223E43B3F00ACE611 /* FoodController.swift */; };
 		1F0F43E723E9F3DB00ACE611 /* DetailFoodvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */; };
 		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
+		1FF4963423ED49FD00F2FE57 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963323ED49FD00F2FE57 /* CartTableViewController.swift */; };
+		1FF4963623ED506100F2FE57 /* Checkoutvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963523ED506100F2FE57 /* Checkoutvc.swift */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
 		3B8201A423CDAE200027A534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A323CDAE200027A534 /* ViewController.swift */; };
@@ -35,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
-		1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
 		1F0F43CB23D6F85900ACE611 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		1F0F43CD23D6F86E00ACE611 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1F0F43CF23D6F87800ACE611 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		1F0F43E223E43B3F00ACE611 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 		1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodvc.swift; sourceTree = "<group>"; };
 		1F92D02423CEE19C00144E18 /* Content.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		1FF4963323ED49FD00F2FE57 /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		1FF4963523ED506100F2FE57 /* Checkoutvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkoutvc.swift; sourceTree = "<group>"; };
 		32C3F4EE203B4C7E7CB7ED66 /* Pods-Fushionfastfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.debug.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.debug.xcconfig"; sourceTree = "<group>"; };
 		3B82019C23CDAE200027A534 /* Fushionfastfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fushionfastfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B82019F23CDAE200027A534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +93,8 @@
 		1F0F43D423D6F8B400ACE611 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1F0F43C923D6F81E00ACE611 /* ShoppingCartTableViewController.swift */,
 				1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */,
+				1FF4963323ED49FD00F2FE57 /* CartTableViewController.swift */,
 				1F0F43DA23D8C40600ACE611 /* MapViewController.swift */,
 			);
 			path = TableViewController;
@@ -136,6 +138,7 @@
 				3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */,
 				1F0F43E223E43B3F00ACE611 /* FoodController.swift */,
 				1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */,
+				1FF4963523ED506100F2FE57 /* Checkoutvc.swift */,
 				1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */,
 				BF17602723ED291800637912 /* EditProfileViewController.swift */,
 				BF17602B23ED2F3600637912 /* ProfileViewController.swift */,
@@ -287,7 +290,6 @@
 				3B8201A423CDAE200027A534 /* ViewController.swift in Sources */,
 				1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */,
 				3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */,
-				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
 				BF17602C23ED2F3600637912 /* ProfileViewController.swift in Sources */,
 				3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */,

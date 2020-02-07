@@ -19,6 +19,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     var getname = String()
     var getamt = Int16()
     var getimg = UIImage()
+    var foodselect:[Food] = []
     
     
     override func viewDidLoad() {
@@ -28,7 +29,6 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
 //        amtLB.text! = getamt
          amtLB.text! = "$ " + "\(getamt)"
         foodview.image = getimg
-        
         
         
             }
@@ -41,19 +41,22 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
         //        vc.modalPresentationStyle = .fullScreen
         //        present(vc,animated: true, completion: nil)
         let foodcontroller:FoodController = FoodController()
-        if let amt = amtLB.text {   // converting the labels display to a string value
-            let numberFormatter = NumberFormatter()
+//        if let amt = amtLB.text {   // converting the labels display to a string value
+//            let numberFormatter = NumberFormatter()
+//
+//            var theNumber = numberFormatter.number(from: amt)!.int16Value // thenumber is assigned the value
+//
+//        }
+        let f:Food = Food(name: getname, amount:getamt)
+               foodcontroller.addtoCart(newfood: f)
 
-            var theNumber = numberFormatter.number(from: amt)!.int16Value // thenumber is assigned the value
-            
-        }
-        
-        let f:Food = Food(name: foodLB.text!, amount:Int16(amtLB.text!)! )
-        foodcontroller.addFoodtoCart(newfood: f)
                 let alertController:UIAlertController = UIAlertController(title: "Message", message: "You have added " + foodLB.text! + " " + "to cart", preferredStyle: UIAlertController.Style.alert)
                 let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
                 alertController.addAction(alertAction)
                 present(alertController, animated: true, completion: nil)
+        
+       
+        
     }
    
     
