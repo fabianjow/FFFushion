@@ -28,6 +28,8 @@
 		3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */; };
 		3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8A23EC790200EA831C /* Utilities.swift */; };
 		3BF7464823E96404009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464723E96404009B77BB /* GoogleService-Info.plist */; };
+		BF17602823ED291800637912 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17602723ED291800637912 /* EditProfileViewController.swift */; };
+		BF17602C23ED2F3600637912 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17602B23ED2F3600637912 /* ProfileViewController.swift */; };
 		E11A21316BDDD75E6DB62927 /* Pods_Fushionfastfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		3BAC8B8A23EC790200EA831C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3BF7464723E96404009B77BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4844A0AC713259F03DF619D4 /* Pods-Fushionfastfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fushionfastfood.release.xcconfig"; path = "Target Support Files/Pods-Fushionfastfood/Pods-Fushionfastfood.release.xcconfig"; sourceTree = "<group>"; };
+		BF17602723ED291800637912 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		BF17602B23ED2F3600637912 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E4F743CEFF5FC3DB11D018CC /* Pods_Fushionfastfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fushionfastfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,8 @@
 				1F0F43E223E43B3F00ACE611 /* FoodController.swift */,
 				1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */,
 				1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */,
+				BF17602723ED291800637912 /* EditProfileViewController.swift */,
+				BF17602B23ED2F3600637912 /* ProfileViewController.swift */,
 				1F0F43D423D6F8B400ACE611 /* TableViewController */,
 				1F0F43D323D6F8A100ACE611 /* Class */,
 				1F0F43D523D6F8CE00ACE611 /* Storyboard */,
@@ -283,10 +289,12 @@
 				3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */,
 				1F0F43CA23D6F81E00ACE611 /* ShoppingCartTableViewController.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
+				BF17602C23ED2F3600637912 /* ProfileViewController.swift in Sources */,
 				3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */,
 				3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */,
 				1F0F43E723E9F3DB00ACE611 /* DetailFoodvc.swift in Sources */,
 				1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */,
+				BF17602823ED291800637912 /* EditProfileViewController.swift in Sources */,
 				3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */,
 				1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */,
 				1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */,

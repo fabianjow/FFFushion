@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+class Profile {
+    var userName:String
+    var Email:String
+    var mobileNo:String
+    
+    init(username:String, email:String, mobileno:String) {
+        userName = username
+        Email = email
+        mobileNo = mobileno
+    }
+}
