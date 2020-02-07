@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreData
 
-class ContactController {
+class FoodController {
     
     func retrieveAllFood ()->[Food] {
         var foodlist:[Food] = []
