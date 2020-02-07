@@ -16,9 +16,6 @@ class CartTableViewController: UITableViewController {
         super.viewDidLoad()
         
         food = foodcontroller.Retrievedfood()
-        for i in food{
-            print (i.namE)
-        }
 
 
         // Uncomment the following line to preserve selection between presentations

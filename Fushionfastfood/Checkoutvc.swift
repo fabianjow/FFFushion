@@ -10,11 +10,14 @@ import Foundation
 import UIKit
 class Checkoutvc: UIViewController, UITableViewDelegate{
     
+    var foodcontroller:FoodController = FoodController()
+    var food:[Food] = []
+    var sum = Int16()
+    
+    
     @IBOutlet weak var totalLB: UILabel!
     
     @IBAction func checkoutBtn(_ sender: Any) {
-        
-        
         
         
         let alertController:UIAlertController = UIAlertController(title: "Message", message: "You have added " + "to cart", preferredStyle: UIAlertController.Style.alert)
@@ -30,7 +33,17 @@ class Checkoutvc: UIViewController, UITableViewDelegate{
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()}
+        super.viewDidLoad()
+        
+        food = foodcontroller.retrieveAllFood()
+               
+       for i in food {
+        sum += i.amounT
+       }
+        totalLB.text! = "$ " + "\(sum)"
+        
+    }
+    
     
     
     
