@@ -58,6 +58,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
        
         
     }
+    //test
    
     
     override func didReceiveMemoryWarning() {

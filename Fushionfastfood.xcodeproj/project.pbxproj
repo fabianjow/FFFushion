@@ -16,8 +16,6 @@
 		1F0F43E323E43B3F00ACE611 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E223E43B3F00ACE611 /* FoodController.swift */; };
 		1F0F43E723E9F3DB00ACE611 /* DetailFoodvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */; };
 		1F92D02523CEE19C00144E18 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F92D02423CEE19C00144E18 /* Content.storyboard */; };
-		1FF4963423ED49FD00F2FE57 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963323ED49FD00F2FE57 /* CartTableViewController.swift */; };
-		1FF4963623ED506100F2FE57 /* Checkoutvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963523ED506100F2FE57 /* Checkoutvc.swift */; };
 		3B8201A023CDAE200027A534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82019F23CDAE200027A534 /* AppDelegate.swift */; };
 		3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A123CDAE200027A534 /* SceneDelegate.swift */; };
 		3B8201A423CDAE200027A534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8201A323CDAE200027A534 /* ViewController.swift */; };
@@ -28,6 +26,8 @@
 		3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */; };
 		3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8823EC753D00EA831C /* SignUpViewController.swift */; };
 		3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC8B8A23EC790200EA831C /* Utilities.swift */; };
+		3BE61B2023EDAD9D0044792F /* Checkoutvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963523ED506100F2FE57 /* Checkoutvc.swift */; };
+		3BE61B2123EDADFB0044792F /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4963323ED49FD00F2FE57 /* CartTableViewController.swift */; };
 		3BF7464823E96404009B77BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7464723E96404009B77BB /* GoogleService-Info.plist */; };
 		BF17602823ED291800637912 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17602723ED291800637912 /* EditProfileViewController.swift */; };
 		BF17602C23ED2F3600637912 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF17602B23ED2F3600637912 /* ProfileViewController.swift */; };
@@ -290,6 +290,7 @@
 				3B8201A423CDAE200027A534 /* ViewController.swift in Sources */,
 				1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */,
 				3BAC8B8723EC6C8100EA831C /* DesignLogin.swift in Sources */,
+				3BE61B2023EDAD9D0044792F /* Checkoutvc.swift in Sources */,
 				1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */,
 				BF17602C23ED2F3600637912 /* ProfileViewController.swift in Sources */,
 				3BAC8B8B23EC790200EA831C /* Utilities.swift in Sources */,
@@ -299,6 +300,7 @@
 				BF17602823ED291800637912 /* EditProfileViewController.swift in Sources */,
 				3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */,
 				1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */,
+				3BE61B2123EDADFB0044792F /* CartTableViewController.swift in Sources */,
 				1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */,
 				3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */,
 				1F0F43E323E43B3F00ACE611 /* FoodController.swift in Sources */,
