@@ -56,16 +56,16 @@ class CartTableViewController: UITableViewController {
     }
     
     
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        let currentContactNum = self.food[indexPath.row].namE
-//        if editingStyle == UITableViewCell.EditingStyle.delete {
-//            food.remove(at: indexPath.row)
-//
-//            FoodController.deleteContact(mobileno: currentContactNum)
-//            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-//        }
-//
-//    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let currentfood = self.food[indexPath.row].namE
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            food.remove(at: indexPath.row)
+
+            foodcontroller.deletefood(name: currentfood)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
+
+    }
 
     
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
