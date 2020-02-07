@@ -1,61 +1,60 @@
 //
-//  FoodTableViewController.swift
+//  CartTableViewController.swift
 //  Fushionfastfood
 //
-//  Created by Fabian on 21/1/20.
+//  Created by Fabian on 7/2/20.
 //  Copyright © 2020 Fabian Jow. All rights reserved.
 //
 
 import UIKit
 
-class FoodTableViewController: UITableViewController {
-
-    var appDelegate = UIApplication.shared.delegate as! AppDelegate
+class CartTableViewController: UITableViewController {
+    
+    var food:[Food] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let foodcontroller:FoodController = FoodController()
+        food = foodcontroller.Retrievedfood()
+        for i in food{
+            print (i.namE)
+        }
+
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1    }
+        return 1
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-//      appDelegate.foodlist.count
-        return min(appDelegate.foodlist.count, appDelegate.imglist.count)
-
+        return food.count
     }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-          let cell = self.tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath)
-              
-        let food = appDelegate.foodlist[indexPath.row]
-        cell.textLabel!.text = "\(food.namE)"
-        cell.detailTextLabel!.text = "\(food.amounT)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cart", for: indexPath)
+
+        // Configure the cell...
+        cell.textLabel?.text = food[indexPath.row].namE
+        cell.detailTextLabel!.text = String(food[indexPath.row].amounT)
+
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let detail = appDelegate.foodlist[(indexPath as NSIndexPath).row]
-        let img = appDelegate.imglist[(indexPath as NSIndexPath).row]
-        let Storyboard = UIStoryboard(name: "Content", bundle: nil)
-        let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailFoodvc") as! DetailFoodvc
-        
-        DvC.getname = detail.namE
-        DvC.getamt = detail.amounT
-        
-        DvC.getimg = img
-//        DvC.getimg =
-//        DvC.getimg = detail.imageName
-        
-        
-        self.navigationController?.pushViewController(DvC, animated: true)
-            
-            
-    }
 
     /*
     // Override to support conditional editing of the table view.

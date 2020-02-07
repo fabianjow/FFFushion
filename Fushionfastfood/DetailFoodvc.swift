@@ -40,15 +40,15 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
         //        let vc = storyboard.instantiateViewController(withIdentifier: "Cart") as UIViewController
         //        vc.modalPresentationStyle = .fullScreen
         //        present(vc,animated: true, completion: nil)
-//        let foodcontroller:FoodController = FoodController()
+        let foodcontroller:FoodController = FoodController()
 //        if let amt = amtLB.text {   // converting the labels display to a string value
 //            let numberFormatter = NumberFormatter()
 //
 //            var theNumber = numberFormatter.number(from: amt)!.int16Value // thenumber is assigned the value
 //
 //        }
-//        let f:Food = Food(name: foodLB.text!, amount:Int16(amtLB.text!)! )
-//               foodcontroller.addtoCart(newfood: f)
+        let f:Food = Food(name: getname, amount:getamt)
+               foodcontroller.addtoCart(newfood: f)
 
                 let alertController:UIAlertController = UIAlertController(title: "Message", message: "You have added " + foodLB.text! + " " + "to cart", preferredStyle: UIAlertController.Style.alert)
                 let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
