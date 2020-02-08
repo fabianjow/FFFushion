@@ -11,12 +11,12 @@ import UIKit
 
 class Profile {
     var userName:String
-    //var Email:String
-    //var mobileNo:String
+    var Email:String
+    var mobileNo:String
     
-    init(dictionary: String) {
-        self.userName = dictionary
-//        Email = email
-//        mobileNo = mobileno
+    init(username: String, email:String, mobileno:String) {
+        self.userName = username
+        self.Email = email
+        self.mobileNo = mobileno
     }
 }

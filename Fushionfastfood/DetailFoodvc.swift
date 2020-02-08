@@ -35,7 +35,7 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     
     
     @IBAction func addtocartBTN(_ sender: Any) {
-        //        let item = Food(name: foodLB.text!, amount: amtLB.text!, imagename: <#T##String#>)
+        //        let item = Food(name: foodLB.text!, amount: amtLB.text!, imagename: T##String)
         //        let storyboard = UIStoryboard(name: "Content", bundle: nil)
         //        let vc = storyboard.instantiateViewController(withIdentifier: "Cart") as UIViewController
         //        vc.modalPresentationStyle = .fullScreen

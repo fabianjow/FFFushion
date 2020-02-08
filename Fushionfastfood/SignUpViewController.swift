@@ -16,12 +16,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var mobileTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpElements()
+        hideKeyboardWhenTappedAround()
     }
     
     func setUpElements() {
@@ -35,7 +37,8 @@ class SignUpViewController: UIViewController {
         
         if usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
                    emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-                   passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+                   passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+                    mobileTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
                    
                    return "Please fill in all fields."
                }
@@ -63,6 +66,7 @@ class SignUpViewController: UIViewController {
             let username = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
                        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
                        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let mobileNo = mobileTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             // Create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
@@ -75,9 +79,9 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     
-                    // User was created successfully, now store the first name and last name
+                    // User was created successfully, now store the username, email and UID
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["username":username, "uid": result!.user.uid ]) { (error) in
+                    db.collection("users").addDocument(data: ["username":username, "email":email, "mobileno":mobileNo, "uid": result!.user.uid ]) { (error) in
                         
                         if error != nil {
                             // Show error message
@@ -106,4 +110,16 @@ class SignUpViewController: UIViewController {
            
        }
     
+}
+
+extension UIViewController{
+    func hideKeyboardWhenTappedAround(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
 }

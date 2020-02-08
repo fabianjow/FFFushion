@@ -165,7 +165,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnx-gQ-noc">
                                 <rect key="frame" x="20" y="741" width="374" height="80"/>
-                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92153769731521606" green="0.26953345537185669" blue="0.35292160511016846" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="YAP-4T-74G"/>
                                     <constraint firstAttribute="width" secondItem="gnx-gQ-noc" secondAttribute="height" multiplier="187:40" id="h3f-wW-tj5"/>
@@ -423,21 +423,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aef-gO-X65">
-                                <rect key="frame" x="0.0" y="58" width="404.5" height="726"/>
+                                <rect key="frame" x="0.0" y="58" width="402" height="726"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ti-7F-hXv">
-                                        <rect key="frame" x="0.0" y="0.0" width="404.5" height="726"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="726"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uj-hN-HpA">
-                                                <rect key="frame" x="16" y="21" width="372.5" height="24"/>
+                                                <rect key="frame" x="16" y="21" width="370" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aX-pU-iM2">
-                                                <rect key="frame" x="87" y="53" width="230.5" height="201"/>
+                                                <rect key="frame" x="87" y="53" width="228" height="201"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-F4-Fck">
-                                                        <rect key="frame" x="104" y="82" width="22.5" height="36.5"/>
+                                                        <rect key="frame" x="104" y="82" width="20" height="36.5"/>
                                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                 </subviews>
@@ -451,77 +451,67 @@
                                                 </constraints>
                                             </view>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation photos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-6l-w2s">
-                                                <rect key="frame" x="16" y="289" width="372.5" height="21.5"/>
+                                                <rect key="frame" x="16" y="289" width="370" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
                                                 <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-wA-c2k">
-                                                <rect key="frame" x="16" y="297" width="372.5" height="24"/>
+                                                <rect key="frame" x="16" y="297" width="370" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-EI-NVW">
-                                                <rect key="frame" x="16" y="326.5" width="372.5" height="34"/>
+                                                <rect key="frame" x="16" y="326.5" width="370" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation username" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCc-Md-Bv2">
-                                                <rect key="frame" x="16" y="368.5" width="372.5" height="21.5"/>
+                                                <rect key="frame" x="16" y="368.5" width="370" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
                                                 <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyN-7s-A66">
-                                                <rect key="frame" x="16" y="385" width="372.5" height="24"/>
+                                                <rect key="frame" x="16" y="385" width="370" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-px-NCy">
-                                                <rect key="frame" x="16" y="417" width="372.5" height="34"/>
+                                                <rect key="frame" x="16" y="417" width="370" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4M-wG-5li">
-                                                <rect key="frame" x="16" y="459" width="372.5" height="22"/>
+                                                <rect key="frame" x="16" y="459" width="370" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
                                                 <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE NUMBER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGS-lw-UNv">
-                                                <rect key="frame" x="16" y="473" width="372.5" height="24"/>
+                                                <rect key="frame" x="16" y="473" width="370" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-UU-piF">
-                                                <rect key="frame" x="16" y="505" width="372.5" height="34"/>
+                                                <rect key="frame" x="16" y="505" width="370" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation phone number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhq-4I-NJv">
-                                                <rect key="frame" x="16" y="547" width="372.5" height="22"/>
+                                                <rect key="frame" x="16" y="547" width="370" height="22"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
                                                 <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQp-gD-65N">
-                                                <rect key="frame" x="81" y="619" width="242.5" height="52"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvu-Wi-O8s">
-                                                        <rect key="frame" x="99" y="7" width="44.5" height="38"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="1" green="0.41897485792365741" blue="0.31559828477309082" alpha="0.69290453767123283" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstItem="Nvu-Wi-O8s" firstAttribute="leading" secondItem="tQp-gD-65N" secondAttribute="leading" constant="99" id="TJw-yM-4bZ"/>
-                                                    <constraint firstItem="Nvu-Wi-O8s" firstAttribute="top" secondItem="tQp-gD-65N" secondAttribute="top" constant="7" id="eOw-wm-Wfy"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Nvu-Wi-O8s" secondAttribute="trailing" constant="99" id="nco-Zj-PgR"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Nvu-Wi-O8s" secondAttribute="bottom" constant="7" id="tei-11-CII"/>
-                                                </constraints>
-                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-og-kCD">
+                                                <rect key="frame" x="16" y="617" width="370" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.92153769730000001" green="0.26953345540000001" blue="0.35292160509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -532,7 +522,6 @@
                                             <constraint firstAttribute="trailing" secondItem="H4M-wG-5li" secondAttribute="trailing" constant="16" id="8cy-lZ-V4m"/>
                                             <constraint firstItem="SyN-7s-A66" firstAttribute="top" secondItem="R5T-wA-c2k" secondAttribute="bottom" constant="64" id="99h-6N-1Ex"/>
                                             <constraint firstItem="9uj-hN-HpA" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="9hw-Uj-Xyt"/>
-                                            <constraint firstItem="tQp-gD-65N" firstAttribute="top" secondItem="1gq-UU-piF" secondAttribute="bottom" constant="80" id="BJw-Qh-GpW"/>
                                             <constraint firstItem="6aX-pU-iM2" firstAttribute="top" secondItem="9uj-hN-HpA" secondAttribute="bottom" constant="8" id="CM5-Pl-GqO"/>
                                             <constraint firstAttribute="trailing" secondItem="8NN-px-NCy" secondAttribute="trailing" constant="16" id="F73-k2-F7v"/>
                                             <constraint firstItem="H4M-wG-5li" firstAttribute="top" secondItem="8NN-px-NCy" secondAttribute="bottom" constant="8" id="G5O-sZ-0G6"/>
@@ -545,7 +534,6 @@
                                             <constraint firstItem="1gq-UU-piF" firstAttribute="top" secondItem="KGS-lw-UNv" secondAttribute="bottom" constant="8" id="Ovy-gr-5cE"/>
                                             <constraint firstAttribute="trailing" secondItem="KGS-lw-UNv" secondAttribute="trailing" constant="16" id="TKI-Yw-beH"/>
                                             <constraint firstItem="6aX-pU-iM2" firstAttribute="centerX" secondItem="9uj-hN-HpA" secondAttribute="centerX" id="TPu-UR-z0p"/>
-                                            <constraint firstAttribute="bottom" secondItem="tQp-gD-65N" secondAttribute="bottom" constant="55" id="VNv-Md-SjH"/>
                                             <constraint firstItem="Mhq-4I-NJv" firstAttribute="top" secondItem="1gq-UU-piF" secondAttribute="bottom" constant="8" id="Yjy-Ve-QTR"/>
                                             <constraint firstItem="Uhs-6l-w2s" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="ap4-ek-iV2"/>
                                             <constraint firstItem="1gq-UU-piF" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="etp-dj-mV2"/>
@@ -556,7 +544,6 @@
                                             <constraint firstAttribute="trailing" secondItem="Mhq-4I-NJv" secondAttribute="trailing" constant="16" id="jp6-HF-RVf"/>
                                             <constraint firstItem="R5T-wA-c2k" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="43" id="mI1-Nn-Gcd"/>
                                             <constraint firstAttribute="trailing" secondItem="R5T-wA-c2k" secondAttribute="trailing" constant="16" id="ohX-PW-yIt"/>
-                                            <constraint firstItem="tQp-gD-65N" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="81" id="oiv-Xh-evE"/>
                                             <constraint firstItem="Uhs-6l-w2s" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="35" id="pkA-0g-R17"/>
                                             <constraint firstItem="8NN-px-NCy" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="qsA-gP-Xe5"/>
                                             <constraint firstAttribute="trailing" secondItem="SyN-7s-A66" secondAttribute="trailing" constant="16" id="sc2-Ox-fZt"/>
@@ -564,7 +551,6 @@
                                             <constraint firstItem="6aX-pU-iM2" firstAttribute="top" secondItem="2ti-7F-hXv" secondAttribute="top" constant="53" id="uQn-3j-O8K"/>
                                             <constraint firstItem="R5T-wA-c2k" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="43" id="ulq-xj-tYf"/>
                                             <constraint firstItem="Mhq-4I-NJv" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="vOF-8G-oSS"/>
-                                            <constraint firstItem="tQp-gD-65N" firstAttribute="centerX" secondItem="Mhq-4I-NJv" secondAttribute="centerX" id="vit-AJ-DHZ"/>
                                             <constraint firstItem="KGS-lw-UNv" firstAttribute="top" secondItem="SyN-7s-A66" secondAttribute="bottom" constant="64" id="xTF-To-Bxe"/>
                                             <constraint firstAttribute="trailing" secondItem="9uj-hN-HpA" secondAttribute="trailing" constant="16" id="yHU-3A-iU2"/>
                                             <constraint firstItem="8NN-px-NCy" firstAttribute="top" secondItem="SyN-7s-A66" secondAttribute="bottom" constant="8" id="zNW-Ti-5Dg"/>

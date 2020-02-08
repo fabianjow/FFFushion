@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
             setUpElements()
+            hideKeyboardWhenTappedAround()
         }
     
     func setUpElements() {

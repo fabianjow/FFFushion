@@ -26,6 +26,9 @@ class ProfileViewController: UIViewController {
         
         handleFetchUser()
         
+        userNameFld.text = ""
+        emailFld.text = ""
+        mobileNoFld.text = ""
 //        let db = Firestore.firestore().collection("users").document("Test")
 //        db.getDocument { (document, error) in
 //            if let document = document, document.exists {
@@ -51,9 +54,11 @@ class ProfileViewController: UIViewController {
                     
                     let document = querySnapshot!.documents.first
                     
-                    let newProfile = Profile(dictionary: document?.data()["username"] as! String)
+                    let newProfile = Profile(username: document?.data()["username"] as! String, email: document?.data()["email"] as! String, mobileno: document?.data()["mobileno"] as! String)
                         
                     self.userNameFld.text = newProfile.userName
+                    self.emailFld.text = newProfile.Email
+                    self.mobileNoFld.text = newProfile.mobileNo
                     
                 }
             }
