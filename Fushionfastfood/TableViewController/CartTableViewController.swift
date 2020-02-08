@@ -16,6 +16,8 @@ class CartTableViewController: UITableViewController {
         super.viewDidLoad()
         
         food = foodcontroller.Retrievedfood()
+        
+        tableView.reloadData()
 
 
         // Uncomment the following line to preserve selection between presentations
@@ -27,6 +29,9 @@ class CartTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        food = foodcontroller.Retrievedfood()
+        
+         tableView.reloadData()
     }
 
     // MARK: - Table view data source
