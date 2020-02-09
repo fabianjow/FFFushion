@@ -380,10 +380,10 @@
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="8.7053571428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="8cB-4g-mhm">
             <objects>
-                <viewController id="6bk-TK-mr8" sceneMemberID="viewController">
+                <viewController id="6bk-TK-mr8" customClass="EditProfileViewController" customModule="Fushionfastfood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rmz-6R-ely">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,12 +416,6 @@
                                                     <constraint firstItem="AQM-F4-Fck" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="top" constant="81.5" id="ya2-0m-iOA"/>
                                                 </constraints>
                                             </view>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation photos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-6l-w2s">
-                                                <rect key="frame" x="16" y="289" width="370" height="21.5"/>
-                                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
-                                                <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-wA-c2k">
                                                 <rect key="frame" x="16" y="297" width="370" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
@@ -477,7 +471,16 @@
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="saveprofile:" destination="6bk-TK-mr8" eventType="touchUpInside" id="E6b-fa-cgT"/>
+                                                </connections>
                                             </button>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation photos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhs-6l-w2s">
+                                                <rect key="frame" x="16" y="262" width="370" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
+                                                <color key="textColor" red="0.69917353059999998" green="0.079454246879999996" blue="0.04648023817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -491,7 +494,7 @@
                                             <constraint firstItem="6aX-pU-iM2" firstAttribute="top" secondItem="9uj-hN-HpA" secondAttribute="bottom" constant="8" id="CM5-Pl-GqO"/>
                                             <constraint firstAttribute="trailing" secondItem="8NN-px-NCy" secondAttribute="trailing" constant="16" id="F73-k2-F7v"/>
                                             <constraint firstItem="H4M-wG-5li" firstAttribute="top" secondItem="8NN-px-NCy" secondAttribute="bottom" constant="8" id="G5O-sZ-0G6"/>
-                                            <constraint firstItem="gIx-EI-NVW" firstAttribute="top" secondItem="Uhs-6l-w2s" secondAttribute="bottom" constant="16" id="I8f-r2-Fsn"/>
+                                            <constraint firstItem="gIx-EI-NVW" firstAttribute="top" secondItem="Uhs-6l-w2s" secondAttribute="bottom" constant="43" id="I8f-r2-Fsn"/>
                                             <constraint firstItem="KGS-lw-UNv" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="Khh-wL-1lz"/>
                                             <constraint firstItem="6aX-pU-iM2" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="87" id="KmZ-pN-Dei"/>
                                             <constraint firstItem="R5T-wA-c2k" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="M2y-IQ-JkJ"/>
@@ -510,7 +513,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Mhq-4I-NJv" secondAttribute="trailing" constant="16" id="jp6-HF-RVf"/>
                                             <constraint firstItem="R5T-wA-c2k" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="43" id="mI1-Nn-Gcd"/>
                                             <constraint firstAttribute="trailing" secondItem="R5T-wA-c2k" secondAttribute="trailing" constant="16" id="ohX-PW-yIt"/>
-                                            <constraint firstItem="Uhs-6l-w2s" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="35" id="pkA-0g-R17"/>
+                                            <constraint firstItem="Uhs-6l-w2s" firstAttribute="top" secondItem="6aX-pU-iM2" secondAttribute="bottom" constant="8" id="pkA-0g-R17"/>
                                             <constraint firstItem="8NN-px-NCy" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="qsA-gP-Xe5"/>
                                             <constraint firstAttribute="trailing" secondItem="SyN-7s-A66" secondAttribute="trailing" constant="16" id="sc2-Ox-fZt"/>
                                             <constraint firstItem="H4M-wG-5li" firstAttribute="leading" secondItem="2ti-7F-hXv" secondAttribute="leading" constant="16" id="u9E-vx-sHo"/>
@@ -547,6 +550,11 @@
                         <viewLayoutGuide key="safeArea" id="Qih-X4-uR0"/>
                     </view>
                     <navigationItem key="navigationItem" id="jxJ-Fu-WuJ"/>
+                    <connections>
+                        <outlet property="email" destination="8NN-px-NCy" id="0Ve-mj-rvQ"/>
+                        <outlet property="mobileno" destination="1gq-UU-piF" id="oy3-27-GXT"/>
+                        <outlet property="username" destination="gIx-EI-NVW" id="Ygj-3z-Q18"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1B3-kM-xzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
