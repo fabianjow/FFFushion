@@ -57,49 +57,71 @@ class EditProfileViewController: UIViewController {
     }
     
     func saveTapped(){
-        if ((username.text != "" || email.text != "" || mobileno.text != "") && (username.text != nil || email.text != nil || mobileno.text != nil)){
-            guard let uid = Auth.auth().currentUser?.uid else { return }
-            let userRef = usersCollectionRef.document(uid)
-            
-            if let new_username = username.text{
-                
-                
-                userRef.updateData(["username": new_username]) { (error) in
-                    if error != nil{
-                        print("Error saving user data")
-                    }
-                }
-            }
-            if let new_email = email.text{
-                
-                Auth.auth().currentUser?.updateEmail(to: email.text!){ error in
-                    
-                    if error == nil{
-                        userRef.updateData(["email": new_email]) { (error) in
-                            if error != nil{
-                                print("Error saving user data")
-                            }
-                        }
-                    }
-                    
-                }
-                
-            }
-            if let new_mobileno = mobileno.text{
-                           
-                           
-                           userRef.updateData(["mobileno": new_mobileno]) { (error) in
+           if ((username.text != "" || email.text != "" || mobileno.text != "") && (username.text != nil || email.text != nil || mobileno.text != nil)){
+               guard let uid = Auth.auth().currentUser?.uid else { return }
+                let userRef = self.usersCollectionRef.document()
+               //Auth.auth().updateCurrentUser(, completion: <#T##UserUpdateCallback?##UserUpdateCallback?##(Error?) -> Void#>)
+               
+               if let new_username = username.text{
+                    usersCollectionRef.whereField("uid", isEqualTo: uid).addSnapshotListener { (querySnapshot, error) in
+                                  if let err = error{
+                                      debugPrint("Error fetching docs: \(err)")
+                                  }else{
+                                   for document in (querySnapshot?.documents)!{
+                                       if let new_username = document.data()["username"] as? String{
+                                           userRef.updateData(["username": new_username]) { (Error) in
+                                               if error != nil{
+                                                   print("Error saving data")
+                                               }
+                                               else{
+                                                   //self.username.text
+                                               }
+                                           }
+                                           
+                                       }
+                                       
+                                   }
+                                   
+                                   userRef.updateData(["username": new_username]) { (error) in
+                                       if error != nil{
+                                           print("Error saving user data")
+                                       }
+                                   }
+                                      
+                                  }
+                              }
+               }
+               
+               if let new_email = email.text{
+                   
+                   Auth.auth().currentUser?.updateEmail(to: email.text!){ error in
+                       
+                       if error != nil{
+                           userRef.updateData(["email": new_email, "uid":uid]) { (error) in
                                if error != nil{
                                    print("Error saving user data")
                                }
                            }
                        }
-            
-            
-            
-            
-        }
-    }
+                       
+                   }
+                   
+               }
+               if let new_mobileno = mobileno.text{
+                              
+                              
+                   userRef.updateData(["mobileno": new_mobileno, "uid":uid]) { (error) in
+                                  if error == nil{
+                                      print("Error saving user data")
+                                  }
+                              }
+                          }
+               
+               
+               
+               
+           }
+       }
     
     
 }
