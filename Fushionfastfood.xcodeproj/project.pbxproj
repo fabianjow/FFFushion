@@ -10,7 +10,6 @@
 		1F0F43C823D6F7F400ACE611 /* FoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */; };
 		1F0F43CC23D6F85900ACE611 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CB23D6F85900ACE611 /* Profile.swift */; };
 		1F0F43CE23D6F86E00ACE611 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CD23D6F86E00ACE611 /* Food.swift */; };
-		1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43CF23D6F87800ACE611 /* Cart.swift */; };
 		1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43DA23D8C40600ACE611 /* MapViewController.swift */; };
 		1F0F43DF23E2915800ACE611 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */; };
 		1F0F43E323E43B3F00ACE611 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F43E223E43B3F00ACE611 /* FoodController.swift */; };
@@ -38,7 +37,6 @@
 		1F0F43C723D6F7F400ACE611 /* FoodTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewController.swift; sourceTree = "<group>"; };
 		1F0F43CB23D6F85900ACE611 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		1F0F43CD23D6F86E00ACE611 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		1F0F43CF23D6F87800ACE611 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		1F0F43DA23D8C40600ACE611 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 		1F0F43E223E43B3F00ACE611 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				3BAC8B8623EC6C8100EA831C /* DesignLogin.swift */,
 				1F0F43CB23D6F85900ACE611 /* Profile.swift */,
 				1F0F43CD23D6F86E00ACE611 /* Food.swift */,
-				1F0F43CF23D6F87800ACE611 /* Cart.swift */,
 				3BAC8B8A23EC790200EA831C /* Utilities.swift */,
 			);
 			path = Class;
@@ -301,7 +298,6 @@
 				3BAC8B8923EC753D00EA831C /* SignUpViewController.swift in Sources */,
 				1F0F43DB23D8C40600ACE611 /* MapViewController.swift in Sources */,
 				3BE61B2123EDADFB0044792F /* CartTableViewController.swift in Sources */,
-				1F0F43D023D6F87800ACE611 /* Cart.swift in Sources */,
 				3B8201AA23CDAE210027A534 /* Fushionfastfood.xcdatamodeld in Sources */,
 				1F0F43E323E43B3F00ACE611 /* FoodController.swift in Sources */,
 				3B8201A223CDAE200027A534 /* SceneDelegate.swift in Sources */,
