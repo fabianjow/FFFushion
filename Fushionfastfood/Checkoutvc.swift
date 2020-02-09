@@ -30,24 +30,31 @@ class Checkoutvc: UIViewController, UITableViewDelegate{
             foodcontroller.checkout(name: i.namE)
         }
         
-        // Setting storyboard to go to after Alert Action
-        let storyboard = UIStoryboard(name: "Content", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CartTV") as UIViewController
-        // Alertaction OK (Go back to Cart)
-        let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action) -> Void in
-            self.navigationController?.show(vc, sender: self)})
-        // Alertaction Cancel
-        let cancelAction = UIAlertAction(title: "Cancel", style: . cancel) { (alert: UIAlertAction!) -> Void in
-             print("Just dismissing the Alert Controller.")
+        if cart.count == 0 {
+            //Empty Cart Alert
+             let alertControllerEmpty:UIAlertController = UIAlertController(title: "Empty cart", message: "You have not Purchased any items", preferredStyle: UIAlertController.Style.alert)
+            
+            let emptyaction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
+            alertControllerEmpty.addAction(emptyaction)
+             present(alertControllerEmpty, animated: true, completion: nil)
+            
+        } else{
+            // Setting storyboard to go to after Alert Action
+            let storyboard = UIStoryboard(name: "Content", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "CartTV") as UIViewController
+            // Alertaction OK (Go back to Cart)
+            let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{(action) -> Void in
+                self.navigationController?.show(vc, sender: self)})
+            // Alertaction Cancel
+            let cancelAction = UIAlertAction(title: "Cancel", style: . cancel) { (alert: UIAlertAction!) -> Void in
+                 print("Just dismissing the Alert Controller.")
+            }
+            // AlertController
+            let alertController:UIAlertController = UIAlertController(title: "Message", message: "Do you want to check out? ", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(alertAction)
+            alertController.addAction(cancelAction)
+            present(alertController, animated: true, completion: nil)
         }
-        
-        // AlertController
-        let alertController:UIAlertController = UIAlertController(title: "Message", message: "Do you want to check out? ", preferredStyle: UIAlertController.Style.alert)
-        
-        
-        alertController.addAction(alertAction)
-        alertController.addAction(cancelAction)
-        present(alertController, animated: true, completion: nil)
     }
     
     // Display the total amount for Checkout
