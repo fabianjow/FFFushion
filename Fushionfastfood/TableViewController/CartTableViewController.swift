@@ -18,15 +18,10 @@ class CartTableViewController: UITableViewController {
         food = foodcontroller.Retrievedfood()
         
         tableView.reloadData()
-
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    // Getting our data from Core data instead of app delegate
+    // Use function retrieve food to get data
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         food = foodcontroller.Retrievedfood()
@@ -40,13 +35,13 @@ class CartTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return food.count
     }
 
-    
+     // Setting the data into the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cart", for: indexPath)
 
@@ -57,7 +52,7 @@ class CartTableViewController: UITableViewController {
         return cell
     }
     
-    
+    // Function to delete the cells for added to card items
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let currentfood = self.food[indexPath.row].namE
         if editingStyle == UITableViewCell.EditingStyle.delete {

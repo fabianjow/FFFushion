@@ -43,21 +43,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         Gotostall()
-//        functions
-        
-//        locationdelegate
-        
         //formatting the lat and long
             locationManager.delegate = locationDelegate
             locationDelegate.locationCallback = { location in
                 self.latestLocation = location
                 self.centerMapOnLocation(location: location)
-                //self.mapView.showsUserLocation = true
-                
         }
-        
     }
     
+    
+    // Annotations for the Multiple stores islandwide
     func Gotostall()
     {
         let a1 = MKPointAnnotation()

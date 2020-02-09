@@ -11,11 +11,13 @@ import UIKit
 
 class DetailFoodvc: UIViewController, UITableViewDelegate{
 
+    
+    // Label Food Amount and Image for Each Item
     @IBOutlet weak var amtLB: UILabel!
     @IBOutlet weak var foodLB: UILabel!
     @IBOutlet weak var foodview: UIImageView!
     
-    
+    // Variables to retrieve from the App delegate
     var getname = String()
     var getamt = Int16()
     var getimg = UIImage()
@@ -25,31 +27,22 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        // Display the data on the view Controller
         foodLB.text! = getname
-//        amtLB.text! = getamt
-         amtLB.text! = "$ " + "\(getamt)"
+        amtLB.text! = "$ " + "\(getamt)"
         foodview.image = getimg
-        
         
             }
     
     
     @IBAction func addtocartBTN(_ sender: Any) {
-        //        let item = Food(name: foodLB.text!, amount: amtLB.text!, imagename: T##String)
-        //        let storyboard = UIStoryboard(name: "Content", bundle: nil)
-        //        let vc = storyboard.instantiateViewController(withIdentifier: "Cart") as UIViewController
-        //        vc.modalPresentationStyle = .fullScreen
-        //        present(vc,animated: true, completion: nil)
+        
+        // Passing data from vc to store in Core data
         let foodcontroller:FoodController = FoodController()
-//        if let amt = amtLB.text {   // converting the labels display to a string value
-//            let numberFormatter = NumberFormatter()
-//
-//            var theNumber = numberFormatter.number(from: amt)!.int16Value // thenumber is assigned the value
-//
-//        }
         let f:Food = Food(name: getname, amount:getamt)
                foodcontroller.addtoCart(newfood: f)
 
+        // Alert message added to cart
                 let alertController:UIAlertController = UIAlertController(title: "Message", message: "You have added " + foodLB.text! + " " + "to cart", preferredStyle: UIAlertController.Style.alert)
                 let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
                 alertController.addAction(alertAction)
@@ -58,7 +51,6 @@ class DetailFoodvc: UIViewController, UITableViewDelegate{
        
         
     }
-    //test
    
     
     override func didReceiveMemoryWarning() {

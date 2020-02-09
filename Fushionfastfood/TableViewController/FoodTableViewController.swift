@@ -24,11 +24,11 @@ class FoodTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-//      appDelegate.foodlist.count
         return min(appDelegate.foodlist.count, appDelegate.imglist.count)
 
     }
     
+    // Setting the data into the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
           let cell = self.tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath)
               
@@ -38,18 +38,17 @@ class FoodTableViewController: UITableViewController {
         return cell
     }
     
+    // Getting the data to put into the view controller for individual items
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let detail = appDelegate.foodlist[(indexPath as NSIndexPath).row]
         let img = appDelegate.imglist[(indexPath as NSIndexPath).row]
         let Storyboard = UIStoryboard(name: "Content", bundle: nil)
         let DvC = Storyboard.instantiateViewController(withIdentifier: "DetailFoodvc") as! DetailFoodvc
         
+        // Placing the data into variables that can be called later in the view controller
         DvC.getname = detail.namE
         DvC.getamt = detail.amounT
-        
         DvC.getimg = img
-//        DvC.getimg =
-//        DvC.getimg = detail.imageName
         
         
         self.navigationController?.pushViewController(DvC, animated: true)
