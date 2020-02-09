@@ -110,6 +110,15 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		1FFDAC7D23F06ECF0018D428 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */,
+				1FF4963523ED506100F2FE57 /* Checkoutvc.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		3B82019323CDAE200027A534 = {
 			isa = PBXGroup;
 			children = (
@@ -139,8 +148,7 @@
 				BF17602723ED291800637912 /* EditProfileViewController.swift */,
 				BF17602B23ED2F3600637912 /* ProfileViewController.swift */,
 				1F0F43E223E43B3F00ACE611 /* FoodController.swift */,
-				1F0F43E623E9F3DB00ACE611 /* DetailFoodvc.swift */,
-				1FF4963523ED506100F2FE57 /* Checkoutvc.swift */,
+				1FFDAC7D23F06ECF0018D428 /* View Controller */,
 				1F0F43DE23E2915800ACE611 /* LocationDelegate.swift */,
 				1F0F43D423D6F8B400ACE611 /* TableViewController */,
 				1F0F43D323D6F8A100ACE611 /* Class */,

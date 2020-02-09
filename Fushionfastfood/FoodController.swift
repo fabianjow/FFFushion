@@ -12,6 +12,8 @@ import CoreData
 
 class FoodController {
     
+    
+    // Retrieve all the food function for the food that has been added into the cart
     func retrieveAllFood ()->[Food] {
         var foodlist:[Food] = []
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -37,7 +39,8 @@ class FoodController {
         return foodlist
         
     }
-    //Adding new food to the core data food 
+    
+    //Adding new food to the core data food
     func addtoCart(newfood:Food){
         let appDelegate = (UIApplication.shared.delegate) as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -58,27 +61,8 @@ class FoodController {
         }
     }
     
-    // get the food from the core data so can display on the tableview cart
-    func Retrievedfood() -> [Food] {
-        var cartlist:[Food] = []
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        
-        //fetch recipe
-        let fetchrequest = NSFetchRequest<NSManagedObject>(entityName: "CDFood")
-        do{
-            let cdfood = try context.fetch(fetchrequest) as! [CDFood]
-            for r in cdfood{
-                cartlist.append(Food(name: r.name!, amount: r.amount))
-            }
-        }catch {
-            print(error)
-        }
-        return cartlist
-        
-    }
     
+    // Delete food function
     func deletefood(name:String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -102,6 +86,7 @@ class FoodController {
         
     }
     
+    // Checking out function: a for loop to delete all the items in the core data
     func checkout(name:String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -124,6 +109,29 @@ class FoodController {
             } catch {
                 print("Could not delete. \(error)")
             }
+        
+    }
+    
+    
+    
+    // Retrieve Food from core data
+    func Retrievedfood() -> [Food] {
+        var cartlist:[Food] = []
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        //fetch recipe
+        let fetchrequest = NSFetchRequest<NSManagedObject>(entityName: "CDFood")
+        do{
+            let cdfood = try context.fetch(fetchrequest) as! [CDFood]
+            for r in cdfood{
+                cartlist.append(Food(name: r.name!, amount: r.amount))
+            }
+        }catch {
+            print(error)
+        }
+        return cartlist
         
     }
     
