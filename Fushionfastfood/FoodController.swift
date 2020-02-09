@@ -102,6 +102,31 @@ class FoodController {
         
     }
     
+    func checkout(name:String){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "CDFood")
+        fetchRequest.predicate = NSPredicate(format: "name = %@", name)
+            do{
+                let test = try context.fetch(fetchRequest)
+                
+                for i in test{
+                    let objectToDelete = i
+                    context.delete(objectToDelete)
+                }
+                
+                do{
+                    try context.save()
+                }
+                catch{
+                    print("Could not save. \(error)")
+                }
+            } catch {
+                print("Could not delete. \(error)")
+            }
+        
+    }
+    
     
     
 }
