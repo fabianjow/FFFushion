@@ -16,6 +16,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameFld: UILabel!
     @IBOutlet weak var emailFld: UILabel!
     @IBOutlet weak var mobileNoFld: UILabel!
+    @IBOutlet weak var logOut: UIBarButtonItem!
+    
+    
     //var dataDescription:Profile = Profile(username: "", email: "", mobileno: "")
     private var usersCollectionRef: CollectionReference!
     
@@ -66,7 +69,23 @@ class ProfileViewController: UIViewController {
         
         }
     }
+    @IBAction func logOut(_ sender: Any) {
+        logoutButtonTapped()
+    }
     
+    @objc func logoutButtonTapped(){
+        let auth = Auth.auth()
+        
+        do {
+            try auth.signOut()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyboard.instantiateViewController(identifier: "Login") as UIViewController
+                          vc.modalPresentationStyle = .fullScreen
+                          present(vc, animated: true, completion: nil)
+        } catch let err as NSError {
+            print("Error signing out: %@", err)
+        }
+    }
     
     override func viewDidAppear(_ animated:Bool){
         super.viewDidAppear(true)

@@ -7,46 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Plan your visit-->
-        <scene sceneID="9L0-4K-QYy">
-            <objects>
-                <tableViewController id="1aL-Q5-LsS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="StQ-kR-oBr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="185" id="cK7-V8-vDq">
-                                <rect key="frame" x="0.0" y="28" width="414" height="185"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cK7-V8-vDq" id="KyS-pg-lDX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azs-Qu-K9c">
-                                            <rect key="frame" x="186" y="82" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="1aL-Q5-LsS" id="aiR-Jw-hMZ"/>
-                            <outlet property="delegate" destination="1aL-Q5-LsS" id="PvO-pb-weh"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Plan your visit" id="en2-OB-5aj">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="r0q-08-hcl"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z4-qM-8MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1032" y="-1396"/>
-        </scene>
         <!--Stall Locations-->
         <scene sceneID="MgN-AU-3gH">
             <objects>
@@ -398,14 +358,20 @@
                         <viewLayoutGuide key="safeArea" id="fU9-mH-byM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="OWh-lG-tFx">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ytZ-1W-1hm">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ytZ-1W-1hm">
                             <connections>
                                 <segue destination="6bk-TK-mr8" kind="presentation" id="hJ4-Zc-b6B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" image="power" catalog="system" id="gb3-Mw-bbK">
+                            <connections>
+                                <action selector="logOut:" destination="dSj-V4-L9a" id="KAK-gL-Svb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailFld" destination="rmr-bz-5z7" id="buO-MW-iQH"/>
+                        <outlet property="logOut" destination="gb3-Mw-bbK" id="q4O-2e-HCa"/>
                         <outlet property="mobileNoFld" destination="OWX-GT-Ffd" id="GBf-ag-eHf"/>
                         <outlet property="userNameFld" destination="a72-bO-OgH" id="gV1-9a-u6L"/>
                     </connections>
@@ -791,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fx1-eM-rS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-751" y="-285"/>
+            <point key="canvasLocation" x="-854" y="-285"/>
         </scene>
     </scenes>
     <resources>
@@ -802,5 +768,6 @@
         <image name="location-permission" width="1073" height="968"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
+        <image name="power" catalog="system" width="64" height="62"/>
     </resources>
 </document>
