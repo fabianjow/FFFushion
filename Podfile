@@ -10,6 +10,12 @@ target 'Fushionfastfood' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
+pod 'JGProgressHUD'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'SwiftyJSON'
+pod 'TinyConstraints'
 
 end
